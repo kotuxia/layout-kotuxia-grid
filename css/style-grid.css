@@ -1,0 +1,128 @@
+:root {
+    font-size: 62.5%;
+
+    --font-weight: 500;
+    --font-family: 'DM Sans', sans-serif;
+    --second-family: 'Poppins', sans-serif;
+
+    --main-bg-color: #10151C;
+    --main-font-color: #FFFFFF;
+    --pink-button-color: #FA0369;
+    --gray-button-color: #282C33;
+    --gray-text-color: #7E8597;
+    --gray-instruction-blocks: #141A25;
+    --black-font-color: #1a1a1a;
+}
+
+body {
+    background: var(--main-bg-color);
+    color: var(--main-font-color);
+    font-family: var(--font-family);
+}
+
+.container {
+    max-width: 1166px;
+    margin: 0 auto;
+    padding: 0 10px;
+    height: 100%;
+}
+
+/* header start  ================================================ */
+.header {
+    padding: 29px 0 24px;
+    margin-bottom: 96px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 121px;
+    min-height: 41px;
+    border-radius: 100px;
+    background: var(--gray-button-color);
+    font-size: 1.6rem;
+    transition: 0.6s linear;
+}
+
+/* header end  ================================================ */
+
+/* picture start ===================================*/
+
+/* .picture {
+
+} */
+
+.picture__block {
+    display: grid;
+}
+
+
+/* picture end ===================================*/
+
+
+/* footer start ===========================================*/
+.footer {
+    border-top: 1px solid var(--main-bg-color);
+    background: var(--main-font-color);
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 0;
+}
+
+.footer__text {
+    font-family: var(--second-family), sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 180%;
+    color: var(--gray-text-color);
+}
+
+.grid-btn {
+    height: 50px;
+    width: 100px;
+}
+
+.footer__list {
+    display: flex;
+}
+
+.footer__item {
+    margin-right: 32px;
+}
+
+.footer__item:last-child {
+    margin-right: 0;
+}
+
+/* footer end ===========================================*/
+
+a.btn-booking:hover {
+    color: var(--pink-button-color);
+    background: var(--main-font-color);
+    box-shadow: 0px 0px 25px 1px var(--pink-button-color);
+}
+
+.header__button:hover {
+    color: var(--gray-instruction-blocks);
+    background: var(--main-font-color);
+}
+
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection {
+    background-color: var(--pink-button-color);
+    color: var(--main-font-color);
+}
